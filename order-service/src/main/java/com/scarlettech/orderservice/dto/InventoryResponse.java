@@ -1,4 +1,4 @@
-package com.scarlettech.inventoryservice.dto;
+package com.scarlettech.orderservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
