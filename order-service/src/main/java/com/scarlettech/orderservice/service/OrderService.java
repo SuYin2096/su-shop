@@ -38,7 +38,7 @@ public class OrderService {
                 .toList();
         // call inventory service and place order if product is in the stock
         InventoryResponse[] inventoryResponses = webClient.get()
-                .uri("http://localhost:8083/api/inventory",
+                .uri("http://invertory-service/api/inventory",
                         uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)
